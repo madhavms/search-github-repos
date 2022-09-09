@@ -20,7 +20,7 @@ const getRepos = async ({
          .sort((first, second) => second.stars - first.stars)
     }
         catch(error) {
-            return []
+            return "No repositories found for the given user."
         }
     }
 
